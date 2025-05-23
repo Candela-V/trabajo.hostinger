@@ -30,6 +30,10 @@ header{
 .container-nav--movil{
     display: none;
 }
+.bi.bi-list{
+    color: black;
+    font-size: 24px;
+}
 
 .icon--logo{
     fill: black;
@@ -94,7 +98,6 @@ nav a{
 
 .conteiner_login{
     display: flex;
-    justify-content: flex-end;
     gap: 20px;
 }
 
@@ -165,13 +168,14 @@ nav a{
     flex-direction: column;
     width: 100%;
     max-width: 470px;
-    flex: 1;
+
 }
 
 .conteiner-img{
 display: flex;
 flex-direction: row;
 max-width: 880px;
+width: 100%;;
 }
 
 img{
@@ -283,7 +287,6 @@ p{
 .text-section-migrations{
     margin-top: 24px;
     width: 1128px;
-    height: 72px;
 }
 
 .conteiner-card-general{
@@ -462,7 +465,6 @@ footer{
 .politicals-span{
     display: flex;
     flex-direction: row;
-    min-width: 444px;
     gap: 16px;
     order: 4;
 }
@@ -472,6 +474,7 @@ footer{
     color: #2f1c6a; 
     font-weight: 400;
     text-decoration: none;
+    display: inline-block;
 }
 
 .footer-footer{
@@ -490,10 +493,50 @@ footer{
     color: #2f1c6a; 
     font-weight: 400;
 }
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #673de6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 16px 8px 8px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-@media screen and (max-width: 1551px){
+.floating-button:hover {
+    background-color: #5a22c6;
+}
+
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
+
+@media screen and (max-width: 1440px){
     .conteiner-principial{
-        max-width: 1472px;
+        max-width: 1440px;
+    }
+    .conteiner-text{
+        width: 100%;
+        max-width: 440px;
+    }
+    .conteiner-img{
+        width: 100%;
+        max-width: 840px;
+        overflow: hidden;
+    }
+    .conteiner-img img{
+        width: 100%;
     }
     .title-need-web{
         font-size: 36px;
@@ -503,79 +546,339 @@ footer{
     }
 }  
 
-@media screen and(max-width: 1367px){
+@media screen and(max-width: 1366px){
     .conteiner-principal{
         max-width: 1208px;
+        padding: 0px 40px;
+        margin: auto;
     }
     .conteiner-text{
         width: 100%;
         max-width: 450px;
     }
-
+    .conteiner-img{
+        width: 100%;
+    }
 }  
 
-@media screen and(max-width:1125px){
-    .conteiner-header{
-        display: none;
+@media screen and ( max-width: 1125px){
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 16px;
     }
-}
-
     .icono-hostinger{
         padding-left: 20px;
         padding-top: 16px;
         padding-bottom: 16px;
     }
-
-    .header{
-        width: 100%;
-    }
-
-    .conteiner-nav{
+    .conteiner-header{
         display: none;
     }
-
-    .conteiner_login{
-        display: none;
-    }
-
-    .conteiner-principal{
-        max-width: 1065px;
-        margin: 0px;
-        padding: 0px 40px;
-    }
-
-    .container-month-free{
-        margin-bottom: 24px;
+    .container-nav--movil{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
     }
 
     .conteiner-title{
-        max-width: 1042px;
+        max-width: 1125px;
         align-items: center;
     }
 
     .text-section-migrations{
         max-width: 1042px;
         width: 100%;
-        padding-left: auto;
-        padding-right: auto;
     }
+}
 
-@media screen and (max-width: 768px){
-    .conteiner-header{
-        display: none;
+@media screen and (max-width: 1024px){
+    main{
+        padding-top: 62px;
     }
-    
-    .header{
+    .section-principal{
+        padding: 62px 0px;
+    }
+    .conteiner-principal{
+        max-width: 768px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 40px;
+    }
+    .conteiner-text{
+        max-width: 100%;
+        line-height: 26px;
+    }
+    .title-need-web{
+        font-size: 28px;
+        letter-spacing: normal;
+    }
+    .off-paragraph{
+        font-size: 18px;
+    }
+    .conteiner-sale{
+        margin-bottom: 2px;
+    }
+    .AR{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 40px;
+    }
+    .month{
+        font-size: 18px;
+    }
+    .month-free{
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    .conteiner-button-clock{
+        margin-bottom: 12px;
+    }
+    .conteiner-title{
+        max-width: 768px;
+    }
+    .conteiner-title h2{
+        font-size: 28px;
+    }
+    .conteiner-card-general{
+        display: flex;
+        flex-direction: column;
+        max-width: 768px;
+    }
+    .conteiner-box_article{
+        display: flex;
+        min-height: 0px;
+    }
+    .paragraph-conteiner{
+        font-size: 18px;
+    }
+    .footer-class{
+        margin: auto;
+        max-width: 768px;
         width: 100%;
     }
+    .container_politicals_pay{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .metodo-pay{
+        order: 2;
+    }
+    .politicals-span{
+        order: 1;
+    }
+    .footer-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+    .footer_copyright span{
+    font-size: 14px;
+}
+}
 
+
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+    }
     .container-nav--movil{
         color: black;
         font-size: 16px;
     }
+    .conteiner-principal{
+        max-width: 540px;
+        width: 100%;
+        padding: 0px 16px;
+    }
+    .title-need-web{
+        font-size: 24px;
+        letter-spacing: normal;
+        margin-bottom: 12px;
+    }
+    .conteiner-list-check{
+        margin-bottom: 16px;
+    }
+    .AR{
+        font-size: 20px;
+    }
+    .price{
+        font-size: 36px;
+    }
+    .month{
+        font-size: 20px;
+    }
+    .month-free{
+        margin-bottom: 16px;
+    }
+    .conteiner-button-clock{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .start_now{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 2;
+    }
+    .false_clock{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        order: 1;
+    }
 
-    .section-principal{
+    .conteiner-text{
+        margin-bottom: 16px;
+    }
+    .section-migrations{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .conteiner-title{
         width: 100%;
         max-width: 540px;
+        padding: 0px 16px;
+        margin-bottom: 32px;
+    }
+    .conteiner-card-general{
+        width: 100%;
+        max-width: 540px;
+        padding: 0px 16px;
+    }
+    .footer-class{
+        max-width: 540px;
+        width: 100%;
+        padding: 0px 16px;
+    }
+    .container_logo_medial{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .conteiner-socialmedial{
+        display: flex;
+        justify-content: space-between;
+        order: 1;
+        padding: 16px 0px;
+        margin-bottom: 8px;
+        width: 100%;
+    }
+    .conteiner_logo_hostinger{
+        display: flex;
+        order: 2;
+    }
+    .container_politicals_pay{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .metodo-pay{
+        margin-bottom: 24px;
+        max-width: 328px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .politicals-span{
+        margin-bottom: 8px;
+        max-width: 328px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .footer_copyright span{
+        margin-bottom: 8px;
+    }
+    .footer-footer{
+        padding: 24px 0px 16px 0px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .text-section-migrations {
+        width: 100%;
+        height: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: center;
+}
+
+    .conteiner-card-general {
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 24px;
+    }
+
+    .conteiner-box_article {
+        padding: 24px;
+    }
+
+    .conteiner-title {
+        padding: 0 20px;
+    }
+
+    .button-start {
+        padding: 12px 32px;
+    }
+
+    .container_logo_medial{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .conteiner-socialmedial{
+        order: 1;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .conteiner_logo_hostinger{
+        order: 2;
+    }
+
+    .politicals-span{
+        max-width: 328px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .metodo-pay{
+        max-width: 300px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    .conteiner-principal{
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .politicals-span{
+        max-width: 328px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .politicals-span{
+        max-width: 319px;
+    }
+    
+    .politicals-span{
+        max-width: 328px;
     }
 }
